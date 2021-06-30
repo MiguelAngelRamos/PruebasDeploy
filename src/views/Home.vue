@@ -27,7 +27,8 @@
       </thead>
       <tbody>
         <tr v-for="ind in indicadorInfo.serie" :key="ind.fecha">
-          <td>{{ fecha(ind.fecha) }}</td>
+          <!-- <td>{{ fecha(ind.fecha) }}</td> -->
+          <td> {{ ind.fecha | fecha }}</td>
           <td>{{ ind.valor }}</td>
         </tr>
 

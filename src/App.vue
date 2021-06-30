@@ -18,6 +18,7 @@ export default {
     };
   },
   beforeCreate() {
+    /* Cuando se crea la instancia instanciamos vue y antes de crear la data */
     console.log("BeforeCreate");
     console.log(this.message);
   },
